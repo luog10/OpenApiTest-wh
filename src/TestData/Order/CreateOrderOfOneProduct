@@ -1,0 +1,31 @@
+﻿{
+ "SONO": "#SONO#",
+ "PayTypeId": "2313221",
+ "PayDate": "2018-04-18 09:04:03",
+ "ShipAmount": "34.556",
+ "PaySerialNumber": "#PaySerialNumber#",
+ "ShipTypeId": "1006",
+ "StockSysNo": "1010",
+ "PayDeclare": "5",
+ "FEPType": "1",
+ "CustomerId": "23333han汉字~",
+ "ReceiveName": "23333ha字~…））323333h",
+ "ReceivePhone": "13476322222",
+ "ReceiveAreaCode": "110101",
+ "ReceiveAddress": "31101hanzi汉字玩儿玩儿11tytytyututyutyutyutyuyuty*01tyutyu01汉字677HHHH***01110131101011101014",
+ "ReceiveZip": "232555",
+ "RealName": "wh汉字66……*（%%%%",
+ "RealPhone": "14888888000",
+ "IDCardNumber": "511621198809180862",
+ "DiscountAmount": "2.93",
+ "InsuredAmount": "20",
+ "ForexReceiptsCurrencyCode": "IDR",
+ "OrderDate": "2018-04-12 08:04:03",
+ "Memo": "",
+ "SOItemList": [
+{
+                "ProductId": "E003AR00400L0001",
+  "Quantity": "1",
+  "Price": "33"
+}]
+}
