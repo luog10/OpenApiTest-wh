@@ -9,6 +9,7 @@ import com.test.utility.RequestType;
 import com.test.utility.TestResultType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.internal.TestResult;
 
 public class TestOrder {
     @Test
@@ -45,6 +46,7 @@ public class TestOrder {
         }
         catch (AssertionError ex) {
             ApiTestHelper.RecordTestResult(TestResultType.Failed, "测试未通过"+ ex.getMessage());
+            Assert.fail();
         }
     }
 }
