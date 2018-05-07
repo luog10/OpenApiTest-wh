@@ -3,7 +3,7 @@ package ApiTestUtility;
 /// <summary>
 /// Api业务响应结果实体
 /// </summary>
-public class ApiBizResponseData{
+public class ApiBizResponseData<T>{
     //处理结果编码
     private  int  Code;
     public  void  SetCode(int Code){
@@ -21,11 +21,11 @@ public class ApiBizResponseData{
         return  this.Message;
     }
     //接口处理完毕返回的数据
-    private  String  Result;
-    public  void  SetResult(String Result){
+    private  T  Result;
+    public  void  SetResult(T  Result){
         this.Result = Result;
     }
-    public  String GetResult(){
+    public  T  GetResult(){
         return  this.Result;
     }
 }

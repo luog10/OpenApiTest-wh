@@ -34,8 +34,7 @@ public class TestCommonData {
             Assert.assertEquals(responseData.GetCode(),"0");
             ApiTestHelper.RecordTestResult(TestResultType.Pass, "测试通过");
         }
-        catch (Exception ex)
-        {
+        catch (AssertionError ex) {
             ApiTestHelper.RecordTestResult(TestResultType.Failed, "测试未通过"+ ex.getMessage());
         }
     }
