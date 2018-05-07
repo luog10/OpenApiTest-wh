@@ -3,15 +3,19 @@ package TestCase.Order;
 import ApiTestUtility.ApiBizResponseData;
 import ApiTestUtility.ApiRequestData;
 import ApiTestUtility.ApiTestHelper;
-import com.test.utility.CommonTool;
-import com.test.utility.FileOpHelper;
-import com.test.utility.RequestType;
-import com.test.utility.TestResultType;
+import com.test.utility.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.internal.TestResult;
 
 public class TestOrder {
+    @Test
+    public  void  TestMockData(){
+        String str = RandomHelper.GenerateCheckCode(5);
+        String str1 = RandomHelper.GenerateCheckCodeNum(5);
+        String Str2 = RandomHelper.GetRandomCodeOfCHS(5);
+        String Str4 = RandomHelper.GetRandomCode(5);
+    }
     @Test
     //测试单商品创建订单
     public void TestCreateOrderOfOneProduct(){
