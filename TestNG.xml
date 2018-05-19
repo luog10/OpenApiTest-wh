@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="1" preserve-order="true" name="OpenApiTest-wh">
+<suite name="OpenApi接口功能测试">
+    <test name="Demo-demo">
+        <!-- 参数定义的方法 -->
+        <parameter name="first_name" value="Cedric"/>
         <classes>
-            <class name="TestCase.Common.TestCommonData"></class>
+            <class name="TestCase.Demo.DemoConfig"/>
+            <class name="TestCase.Demo.TestOrderCreate">
+                <methods>
+                    <exclude name=""></exclude>
+                </methods>
+            </class>
+            <class name="TestCase.Demo.TestOrderEdit"/>
+        </classes>
+    </test>
+    <test name="Common-公共模块">
+        <classes>
+            <class name="TestCase.Common.PayData.TestPayDataGet"></class>
+        </classes>
+    </test>
+    <test name="Order-订单模块">
+        <classes>
+            <class name="TestCase.Order.OrderCreate.testOrderFATCreate">
+                <methods>
+                    <exclude name=""></exclude>
+                </methods>
+            </class>
+            <class name="TestCase.Order.OrderAudit.testOrderFatAudit">
+                <methods>
+                    <exclude name=""></exclude>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
